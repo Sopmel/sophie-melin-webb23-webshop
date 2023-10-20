@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css stylesheet-->
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>StyleHouse</title>
+        
+        
+</head>
+<body>
+
+    <div id="popup-container"></div>
+
+    <!-- NAVBAR  -->
+    <nav class="navbar navbar-expand-lg navbar light bg-white py-4 fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex justify-content-between align-items-center order-lg-0" href="index.html">
+                <img src="images/shopping-bag.png"alt="site icon">
+                <span class="logo-text text-uppercase fw-lighter ms-2 text-dark">StyleHouse</span>
+            </a>
+
+            <div class="order-lg-2 nav-btns">
+                <button type="button" class="btn">
+                   <i class="fa fa-shopping-cart" ></i><p id="count">0</p>
+                </button>
+                 
+            </div>
+            <button class="navbar-toggler border-0 navbar-light" type="button" data-bs-toggle ="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#header">Home</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#collection">Collection</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#specials">Specials</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item px-2 py-2 border-0">
+                        <a class="nav-link text-uppercase text-dark" href="#subscribe">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- END OF NAVBAR  --> 
+    <!-- HEADER  -->
+
+    <header id="header" class="vh-100 carousel slide" data-bs-ride="carousel" style = "padding-top: 150px">
+        <div class="container h-100 d-flex align-items-center carousel-inner">
+            <div class="text-center carousel-item active">
+                <h2 class="text-capitalize text-white">Best Collection</h2>
+                <h1 class="text-uppercase py-2 fw-bold text-white">New arrivals</h1>
+                <a href="#" class="btn mt-3 text-uppercase">Shop now</a>
+            </div>
+
+            <div class="text-center carousel-item">
+                <h2 class="text-capitalize text-white">Best price & offer</h2>
+                <h1 class="text-uppercase py-2 fw-bold text-white">New season</h1>
+                <a href="#" class="btn mt-3 text-uppercase">Buy now</a>
+            </div>
+        </div>
+
+<!-- slide btns    -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#header" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#header" data-bs-slide="prev">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </header>
+
+    <!-- END OF HEADER  -->
+     <!-- COLLECTION  --> 
+
+    
+
+    <main class="content">
+
+        <section id="collection" class="py-5" >
+            <div class="container">
+                <div class="title text-center">
+                    <h2 class="position-relative d-inline-block">New Collection</h2>
+                </div>
+            </div>
+
+     <!-- SEARCH WINDOW  -->
+    
+
+    <div class="text-center py-5"> 
+     <select id="categorySelect">
+       <option value="all">All Categories</option>
+       <option value="men's clothing">Men's Clothing</option>
+       <option value="women's clothing">Women's Clothing</option>
+       <option value="jewelery">Jewelery</option>
+       <option value="electronics">Electronics</option>
+     </select>
+    </div>
+        
+           
+              <div class="root" id="root"></div>
+           
+     <!-- END OF SEARCH WINDOW  -->   
+    
+ 
+
+    </main>
+
+<!-- END OF COLLECTION  --> 
+
+    <!-- SPECIAL PRODUCTS -->
+    <section id="specials" class="py-5">
+        <div class="container">
+            <div class="title text-center py-5">
+                <h2 class="position-relative d-inline-block">Special Selection</h2>
+            </div>
+
+            <div class="special-list row g-0">
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="images/clothing1.jpg" class="w-100">
+                        <span class="position-absolute d-flex align-items-center justify-content-center text-danger fs-4">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Coats</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="images/bags1.jpg" class="w-100">
+                        <span class="position-absolute d-flex align-items-center justify-content-center text-danger fs-4">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Bags</p>
+                    </div>
+                </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class="special-img position-relative overflow-hidden">
+                    <img src="images/maleclothing.webp" class="w-100">
+                    <span class="position-absolute d-flex align-items-center justify-content-center text-danger fs-4">
+                        <i class="fas fa-heart"></i>
+                    </span>
+                </div>
+                <div class="text-center">
+                    <p class="text-capitalize mt-3 mb-1">Shirts</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class="special-img position-relative overflow-hidden">
+                    <img src="images/sunglasses2.jpg" class="w-100">
+                    <span class="position-absolute d-flex align-items-center justify-content-center text-danger fs-4">
+                        <i class="fas fa-heart"></i>
+                    </span>
+                </div>
+                <div class="text-center">
+                    <p class="text-capitalize mt-3 mb-1">Sunglasses</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section> 
+
+    <!-- END OF SPECIAL PRODUCTS -->
+    <!-- ABOUT US  -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row gy-lg-5 align-items-center">
+                <div class="col-lg-6 order-lg-1 text-center text-lg-start">
+                    <div class="title pt-3 pb-5">
+                        <h2 class="position-relative d-inline-block ms-4">About Us</h2>
+                    </div>
+                    <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Voluptatem, architecto!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil officia 
+                        aliquam nulla. Dolor rerum saepe repellat maiores ipsam amet atque illum, 
+                        sapiente explicabo sunt, provident architecto corrupti minus voluptatibus ipsa.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut eum omnis facilis 
+                        esse, iusto voluptatibus odio sint veniam, eos consectetur voluptates commodi
+                        unde aperiam quod officiis tenetur tempora at mollitia.
+                    </p>
+                </div>
+                <div class="col-lg-6 order-lg-0">
+                    <img src="images/sunglasses3.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- END OF ABOUT US  -->
+
+    <!-- SUBSCRIBE -->
+    <section id="subscribe" class="py-5">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <div class="title text-center pt-3 pb-5">
+                    <h2 class="position-relative d-inline-block ms-4">Subscribe</h2>
+                </div>
+
+                <p class="text-center text-muted">
+                    Lorem ipsum dolor sit amet consectetur adipisicing 
+                    elit. Enim dignissimos incidunt iusto doloremque 
+                    dolores eius sunt rem sint? Laboriosam, debitis 
+                    molestias accusamus voluptatum necessitatibus unde 
+                    voluptatibus autem tempora in nulla.</p>
+                    <div class="input-group mb-3 mt-3">
+                        
+                        <input type="text" class="form-control" id="form" placeholder="enter your Email">
+                        <button class="btn btn-primary" type="submit">Send</button>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- END OF SUBSCRIBE -->
+    <!-- FOOTER -->
+    <footer class="bg-dark py-5">
+        <div class="container">
+            <div class="row text-white g-4">
+                <div class="col-md-6 col-lg-3">
+                    <a class="text-uppercase text-decoration-none brand text-white" href="index2.html">StyleHouse</a>
+                    <p class="text-white text-muted mt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Provident in dolorem tempora voluptatem eligendi aut quo sapiente quas libero? Minima praesentium 
+                        distinctio odio odit similique quae porro ad obcaecati ea.</p>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light">Links</h5>
+                    <ul class="list-unstyled">
+                    <li class="my-3">
+                        <a href="#" class="text-white text-muted  text-decoration-none ">
+                            <i class="fas fa-chevron-right me-1"></i>Home
+                        </a>
+                    </li>
+
+                    <li class="my-3">
+                        <a href="#" class="text-white text-muted  text-decoration-none ">
+                            <i class="fas fa-chevron-right me-1"></i>Collection
+                        </a>
+                    </li>
+
+                    <li class="my-3">
+                        <a href="#" class="text-white text-muted  text-decoration-none ">
+                            <i class="fas fa-chevron-right me-1"></i>Specials
+                        </a>
+                    </li>
+
+                    <li class="my-3">
+                        <a href="#" class="text-white text-muted  text-decoration-none ">
+                            <i class="fas fa-chevron-right me-1"></i>About Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <h5 class="fw-light mb-3">Contact Us</h5>
+                <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                    <span class="me-3">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </span>
+                    <span class="fw-light">Drottninggatan 14, Stockholm</span>
+                </div>
+
+                <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                    <span class="me-3">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <span class="fw-light">stylehouse@info.com</span>
+                </div>
+
+                <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                    <span class="me-3">
+                        <i class="fas fa-phone-alt"></i>
+                    </span>
+                    <span class="fw-light">+46 475 962 45</span>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <h5 class="fw-light mb-3">Follow Us</h5>
+                <div>
+                    <ul class="list-unstyled d-flex">
+                        <li>
+                            <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                <i class="fab fa-pinterest"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            
+        </div>
+    </footer>
+    <!-- END OF FOOTER -->
+
+    <!-- CART -->
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h4>Your Cart</h4>
+            <button class="close-cart" id="closeCart"><i class="fa fa-times"></i></button>
+        </div>
+       
+        <div class="cart-item" id="cartItem">Your cart is empty</div>
+        <div class="foot">
+          <h3>Total</h3>
+          <h2 id="total">$ 0.00</h2>
+        </div>
+        <button class="btn-cart" onclick="clearCart()">Check out</button>
+    </div>
+
+    <!-- END OF CART -->
+
+
+ 
+<!-- javascript -->
+ <script src="script.js"></script>
+<!-- bootstrap -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
